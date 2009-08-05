@@ -1,3 +1,17 @@
+# Eureka Invention Generator
+# Copyright (C) 2009 Evan Meagher
+
+# Licensed under the Open Software License 3.0
+# Derivative works are allowed, but must themselves be licensed under OSL 3.0, and therefore the Source Code of those Derivative Works must be disclosed.
+
+
+# File description: Generates a binary tree of ngrams from corpus of source text. Uses tree to generate text.
+
+# Certain variables within the generate_invention method control the nature of the textual output:
+#   window_size: Size of Markov "window" used to construct ngrams
+#   word_count: Approximate word count of the output text
+
+
 require "ngram.rb"
 require "ngram_btree_node.rb"
 
