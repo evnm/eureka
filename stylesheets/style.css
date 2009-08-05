@@ -1,0 +1,83 @@
+body {
+  line-height: 1.5em;
+  background-color: #F1F2E5;
+  color: #7F714D;
+  font-family: 'georgia', serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #D1CDCA;
+}
+
+div#wrapper {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+header, nav { display: inline-block; }
+footer, section, article { display: block; }
+
+header {
+  margin-bottom: 20px;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+h1 a {
+  height: 48px;
+  width: 212px;
+  text-indent: -9999px;
+  background: transparent url(/img/branding.gif) top left no-repeat;
+  display: block;
+  border: none;
+}
+
+section.invention {
+  padding: 25px 15px;
+  border: 1px solid #edeee0;
+}
+
+section.invention p {
+  margin: 0; 
+}
+
+p { margin-bottom: 20px; }
+
+a.generate_button {
+  margin: 0 auto;
+  height: 41px;
+  width: 203px;
+  text-indent: -9999px;
+  border: none;
+  display: block;
+  background: transparent url(/img/generate_button.gif) center left no-repeat;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 5px;
+  border-top: 1px solid #D1CDCA;
+}
+
+footer p {
+  margin: 0;
+}

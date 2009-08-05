@@ -1,0 +1,32 @@
+
+
+<html>
+  <head>
+    <% require "partials/head.rb" %>
+
+    <title>Eureka - About</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <% require "partials/header.rb" %>
+      <article>
+        <p>Eureka generates random inventions by analyzing the word frequencies of US patent application abstracts. By implementing a <a href="http://en.wikipedia.org/wiki/Markov_process">Markov processor</a>, it produces pseudo-readable text based on the patent abstract source material. In effect, Eureka is able to babble in the language used in patent writeups.</p>
+
+        <p>All patent information was taken from <a href="http://www.data.gov/details/3">Data.gov</a>. Eureka was designed and built as an entry to Sunlight Labs' <a href="http://sunlightlabs.com/contests/appsforamerica2/">Apps for America 2</a> challenge.</p>
+      </article>
+      <% require "partials/footer.rb" %>
+    </div>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-1298975-3");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
