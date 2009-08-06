@@ -4,6 +4,7 @@ Disallow: /corpus
 Disallow: /stylesheets
 Disallow: /img
 Disallow: /partials
+Disallow: /xmlparser
 Disallow: /eruby.cgi
 Disallow: /LICENSE.txt
 Disallow: /README
