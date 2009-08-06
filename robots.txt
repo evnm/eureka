@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /lib
+Disallow: /corpus
+Disallow: /stylesheets
+Disallow: /img
+Disallow: /partials
+Disallow: /eruby.cgi
+Disallow: /LICENSE.txt
+Disallow: /README
