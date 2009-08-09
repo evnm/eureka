@@ -3,20 +3,20 @@
 <html>
   <head>
     <% require "partials/head.rb" %>
-
-    <meta name="verify-v1" content="zGgDhC23bieRZOJnZewsB7vvECfaolGR8WfgLKf25SM=" />
+    <meta name="verify-v1" content="zGgDhC23bieRZOJnZewsB7vvECfaolGR8WfgLKf25SM\
+=" />
     <title>Eureka</title>
   </head>
 
   <body>
     <div id="wrapper">
     <% require "partials/header.rb" %>
-      <article>
-        <a class="generate_button" href="/generate">Generate an invention!</a>
+      <article id="generate">
+	<a id="generate_button" href="generate">Generate an invention!</a>
+	<img id="loading_message" style="display: none;" src='img/loading.gif' />
       </article>
       <% require "partials/footer.rb" %>
     </div>
-
 
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -28,5 +28,6 @@
         pageTracker._trackPageview();
       } catch(err) {}
     </script>
+    <script type='text/javascript' src='js/eureka.js'></script>
   </body>
 </html>

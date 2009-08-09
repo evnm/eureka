@@ -5,6 +5,8 @@ Disallow: /stylesheets
 Disallow: /img
 Disallow: /partials
 Disallow: /xmlparser
+Disallow: /test
+Disallow: /dev
 Disallow: /eruby.cgi
 Disallow: /LICENSE.txt
 Disallow: /README

@@ -4,3 +4,4 @@ puts "    <link rel='stylesheet' type='text/css' media='all' href='stylesheets/s
 puts "    <!--[if IE]>"
 puts "      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>"
 puts "    <![endif]-->"
+puts "    <script type='text/javascript' src='js/prototype-1.6.0.3.js'></script>"

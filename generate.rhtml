@@ -12,7 +12,7 @@
       <% require "partials/header.rb" %>
       <article>
         <% $LOAD_PATH << './lib' %>
-        <% require 'markov_processor.rb' %>
+        <% load 'markov_processor.rb' %>
         <section class="invention">
           <h2>Your invention</h2>
           <p><%= generate_invention %></p>
