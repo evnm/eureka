@@ -5,8 +5,17 @@ RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 # and if it does not exist as a directory
 RewriteCond %{REQUEST_FILENAME} !-d
 # and if it does not exist as a file
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteRule (.*) /$1.rhtml [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} invention
+RewriteRule . invention.php [L]
+
+# If the requested URI does not contain a period in the final path-part
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+# and if it does not exist as a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# and if it does not exist as a file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) $1.rhtml [L]
 
 DirectoryIndex index.rhtml index.html index.htm
 AddHandler rubypage .rhtml
