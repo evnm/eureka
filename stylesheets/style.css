@@ -56,8 +56,13 @@ h2 {
   margin-bottom: 10px;
 }
 
+.clear {
+  display: block;
+  clear: both;
+}
+
 section.invention {
-  padding: 25px 15px;
+  padding: 20px;
   border: 1px solid #edeee0;
 }
 
@@ -66,22 +71,6 @@ section.invention p {
 }
 
 p { margin-bottom: 20px; }
-
-a.generate_button {
-  margin: 0 auto;
-  height: 41px;
-  width: 203px;
-  text-indent: -9999px;
-  border: none;
-  display: block;
-  background: transparent url(/img/generate_button.gif) center left no-repeat;
-}
-
-footer {
-  margin-top: 40px;
-  padding-top: 5px;
-  border-top: 1px solid #D1CDCA;
-}
 
 article#generate {
   text-align: center;
@@ -99,6 +88,36 @@ a#generate_button {
 
 img#loading_message {
   margin: 10px 0 0 0;
+}
+
+a.save_invention {
+  height: 30px;
+  width: 160px;
+  margin-top: 10px;
+  display: inline-block;
+  background: #ffffff url(/img/save_invention.gif) top left no-repeat;
+  text-indent: -9999px;
+  border: none;
+  float: right;
+}
+
+p.invention_link {
+  margin-bottom: 10px;
+}
+
+p.invention_link span {
+  margin-left: 5px;
+  padding: 3px 6px;
+  border: 1px solid #dddecc;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 5px;
+  border-top: 1px solid #D1CDCA;
 }
 
 footer p {
