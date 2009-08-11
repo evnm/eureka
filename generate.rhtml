@@ -3,33 +3,27 @@
 <html>
   <head>
     <% require "partials/head.rb" %>
-
     <title>Eureka - Generate Invention</title>
   </head>
 
   <body>
+    <% $LOAD_PATH << './lib' %>
+    <% load 'markov_processor.rb' %>
+    <% invention_desc = generate_invention %>
+
     <div id="wrapper">
       <% require "partials/header.rb" %>
       <article>
-        <% $LOAD_PATH << './lib' %>
-        <% load 'markov_processor.rb' %>
         <section class="invention">
-          <h2>Your invention</h2>
-          <p><%= generate_invention %></p>
+          <p><%= invention_desc %></p>
+          <form name="save_invention" action="invention" method="post">
+            <input type="hidden" name="invention_to_save" value="<%= invention_desc %>" />
+          </form>
         </section>
+        <a class="save_invention" href="javascript: document.save_invention.submit()">Save this invention</a>
       </article>
+      <span class="clear"></span>
       <% require 'partials/footer.rb' %>
     </div>
-
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-        var pageTracker = _gat._getTracker("UA-1298975-3");
-        pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
   </body>
 </html>
