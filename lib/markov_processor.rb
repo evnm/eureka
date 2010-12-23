@@ -2,18 +2,22 @@
 # Copyright (C) 2009 Evan Meagher
 
 # Licensed under the Open Software License 3.0
-# Derivative works are allowed, but must themselves be licensed under OSL 3.0, and therefore the Source Code of those Derivative Works must be disclosed.
+# Derivative works are allowed, but must themselves be licensed under OSL 3.0,
+# and therefore the Source Code of those Derivative Works must be disclosed.
 
 
-# File description: Generates a binary tree of ngrams from corpus of source text. Uses tree to generate text.
+# File description: Generates a binary tree of ngrams from corpus of source
+# text. Uses tree to generate text.
 
-# Certain variables within the generate_invention method control the nature of the textual output:
+# Certain variables within the generate_invention method control the nature
+# of the textual output:
 #   window_size: Size of Markov "window" used to construct ngrams
 #   word_count: Approximate word count of the output text
 
 
 require "ngram.rb"
 require "ngram_btree_node.rb"
+
 
 def generate_invention(window_size=3, word_count=80)
   # randomly select file within corpus directory
@@ -70,6 +74,7 @@ def group_words(n, lst)
   return result
 end
 
+
 def pick_random(tree)
   caps = get_caps(tree)
   return caps[rand(caps.length)]
@@ -96,7 +101,8 @@ end
 
 ### Helper methods
 
-# pick_random helper: Creates array of leading words with capitalized first word.
+# pick_random helper: Creates array of leading words with capitalized first
+# word.
 def get_caps(tree)
   if tree.nil? then
     return []
